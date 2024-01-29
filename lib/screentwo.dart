@@ -37,8 +37,10 @@ class _SecoundScreenState extends State<SecoundScreen> {
         .pickImage(source: ImageSource.gallery)
         .then((picked) {
       if (picked == null) return null;
+
       return picked.path;
     });
+
     setState(() {
       imageXFile;
       file;
